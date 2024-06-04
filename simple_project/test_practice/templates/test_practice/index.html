@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>This is test practice page</h1>
+    <a href="/">Home</a>
+    <a href="/test">test page</a>
+
+    <h3>person name {{name}}</h3>
+    <p>length of languages {{languages | length}}</p>
+    <p>addition {{age | add:'2'}}</p>
+    <p>cap first {{name | capfirst}}</p>
+    <p>remove space {{name | cut:" "}}</p>
+    <p>default {{job | default:"no experience"}}</p>
+    <p>return first element {{name | first}}</p>
+    <p>return first element {{languages | first}}</p>
+    <p>join list with string {{languages | join:"-"}}</p>
+    <p>list from string {{name | make_list}}</p>
+    <p>slice {{name | slice:'2'}}</p>
+    <p>title {{designation | title}}</p>
+    <p>upper {{designation | upper}}</p>
+    <p>lower {{designation | lower}}</p>
+  </body>
+</html>
